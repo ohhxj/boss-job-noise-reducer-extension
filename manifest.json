@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS 求职降噪助手",
+  "version": "0.5.15",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqzO78Y8JfptCAQc/ayDCCe+VoosqMlYD8OvKVTkx99//cLr5q1OHACQgbpMcfZ8UYhO2PZ/0jXudCb4FteZuKZGA+oxNQO2HWE4j0CW8rvR3bE4vju0EhQ+43hsKxhZ/LZmPa8OClOefB9SX9T+PrXRZhfe/f9Lb+hTOqC7Y9Ceqeo6YnztM3u4Ffx2W9whwlzQ2zVELBRHpMTtlBoaZiG9aBcyDPGNq38GjUD0jGQLoSyqG7DZbiqB0Kv0ewkowKEo/kqZz/Gaqj1uatT8v3DobW144St5K5Dr0SzYEiybHkOxi9L3Rl3lSi5bRxW9d5fIGzgp+B4xJAEH2B/V9YQIDAQAB",
+  "description": "在 BOSS 直聘职位列表页和消息页同步本地求职状态，并提供独立数据面板。",
+  "action": {
+    "default_title": "BOSS 求职降噪助手",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://zhipin.com/*",
+    "https://zhipin.com/*",
+    "http://*.zhipin.com/*",
+    "https://*.zhipin.com/*",
+    "http://bosszhipin.com/*",
+    "https://bosszhipin.com/*",
+    "http://*.bosszhipin.com/*",
+    "https://*.bosszhipin.com/*",
+    "http://kanzhun.com/*",
+    "https://kanzhun.com/*",
+    "http://*.kanzhun.com/*",
+    "https://*.kanzhun.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://zhipin.com/*",
+        "https://zhipin.com/*",
+        "http://*.zhipin.com/*",
+        "https://*.zhipin.com/*",
+        "http://bosszhipin.com/*",
+        "https://bosszhipin.com/*",
+        "http://*.bosszhipin.com/*",
+        "https://*.bosszhipin.com/*",
+        "http://kanzhun.com/*",
+        "https://kanzhun.com/*",
+        "http://*.kanzhun.com/*",
+        "https://*.kanzhun.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
