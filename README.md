@@ -44,6 +44,18 @@ BOSS 求职降噪助手围绕四个常用工作区展开：消息管理、职位
 
 ## 安装
 
+### 方式一：下载发布包
+
+1. 打开 [Releases](https://github.com/ohhxj/boss-job-noise-reducer-extension/releases)。
+2. 下载最新版本里的 `boss-job-noise-reducer-extension-v0.5.15-install.zip`。
+3. 解压这个 zip。
+4. 打开 `chrome://extensions/` 或 `edge://extensions/`。
+5. 开启右上角“开发者模式”。
+6. 点击“加载已解压的扩展程序”。
+7. 选择解压后的 `boss-job-noise-reducer-extension` 文件夹。
+
+### 方式二：从源码加载
+
 1. 下载或克隆本项目。
 2. 打开 `chrome://extensions/` 或 `edge://extensions/`。
 3. 开启右上角“开发者模式”。
